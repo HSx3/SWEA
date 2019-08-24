@@ -14,7 +14,7 @@
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-end-line="32" selection-end-column="48" />
+              <caret line="11" selection-end-line="32" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -23,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/특이한자석.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
-              <caret line="53" column="89" lean-forward="true" selection-start-line="53" selection-start-column="89" selection-end-line="53" selection-end-column="89" />
+              <caret line="53" column="89" selection-start-line="53" selection-start-column="89" selection-end-line="53" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -245,7 +245,7 @@
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-end-line="32" selection-end-column="48" />
+          <caret line="11" selection-end-line="32" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -287,7 +287,7 @@
     <entry file="file://$PROJECT_DIR$/특이한자석.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="53" column="89" lean-forward="true" selection-start-line="53" selection-start-column="89" selection-end-line="53" selection-end-column="89" />
+          <caret line="53" column="89" selection-start-line="53" selection-start-column="89" selection-end-line="53" selection-end-column="89" />
         </state>
       </provider>
     </entry>
