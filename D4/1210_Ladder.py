@@ -3,7 +3,6 @@ sys.stdin = open('1210_input.txt')
 
 
 def ladder(x, y):
-    global goals, result
     dx = [0, 0, -1]
     dy = [1, -1, 0]
 
@@ -32,10 +31,7 @@ T = 10
 for test_case in range(1, T+1):
     N = int(input())
     data = [list(map(int, input().split())) for _ in range(100)]
-    visited = [[0 for _ in range(100)] for _ in range(100)]
 
-    goals = []
-    result = 0
     for i in range(100):
         if data[99][i] == 2:
             print('#{} {}'.format(test_case, ladder(99, i)))
