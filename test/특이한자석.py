@@ -2,11 +2,6 @@ import sys
 sys.stdin = open("특이한자석_input.txt")
 
 
-# def side(coil_no, coil_direction, check):
-#     for i in range(len(check)):
-
-
-
 T = int(input())
 
 # for test_case in range(1, T+1):
@@ -45,7 +40,7 @@ for test_case in range(1):
 
 
 
-        
+
         # 자석 회전
         if lotation_info[i][1] == 1:    # 회전정보의 i번째 자석의 방향이 시계방향이면
             # print(lotation_info[i][0])
