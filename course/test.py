@@ -1,35 +1,24 @@
 import sys
-sys.stdin = open('queue_노드의_거리.txt', 'r')
-
-
-def bfs(v):
-    global goal
-    Q = []
-    Q.append(v)
-    visited[v] = 1
-    while len(Q) != 0:
-        t = Q.pop(0)
-        if t == goal:
-            return visited[t] - 1  # 출발지가 1부터 시작하므로 1을 빼줌
-
-        for w in range(1, V + 1):
-            if adj[t][w] == 1 and visited[w] == 0:
-                Q.append(w)
-                visited[w] = visited[t] + 1 # 거리 누적
-
-    return 0  # 경로가 없는 경우
+sys.stdin = open("linked_list_암호.txt")
 
 
 T = int(input())
-for tc in range(1, T+1):
-    V, E = map(int, input().split())  # 정점, 간선
-    adj = [[0 for i in range(V + 1)] for j in range(V + 1)]  # 2차원 초기화
-    visited = [0 for i in range(V + 1)]  # 방문처리
-    for i in range(E):
-        s_node, e_node = map(int, input().split())  # 시작노드, 끝노드
-        adj[s_node][e_node] = 1  # 인접행렬
-        adj[e_node][s_node] = 1  # 방향성이 없음
 
-    start, goal = map(int, input().split())  # 출발노드, 도착노드
-
-    print("#{} {}".format(tc, bfs(start)))
+for TC in range(1, T+1):
+    N, M, K = map(int, input().split())     # N: 숫자 개수, M: 지정 위치로부터의 칸, K:반복횟수
+    arr = list(map(int, input().split()))
+    idx = 0
+    for _ in range(1, K+1):
+        idx += M
+        if idx < N:
+            arr.insert(idx, arr[idx-1] + arr[idx])
+        else:
+            if idx % N:
+                idx = idx % N
+                arr.insert(idx, arr[idx - 1] + arr[idx])
+            else:
+                arr.insert(idx, arr[- 1] + arr[0])
+        N += 1
+    print('#{} '.format(TC), end='')
+    print(*arr[-1:-11:-1])
+    # print(' '.join(map(str, arr[-1:-11:-1])))
